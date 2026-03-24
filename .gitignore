@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data (keep directory structure but ignore large files)
+data/*.csv
+data/**/*.csv
+!data/README.md
+
+# Reports and outputs
+reports/*.json
+reports/**/*.json
+reports/*.npz
+reports/**/*.npz
+reports/*.png
+reports/**/*.png
+!reports/.gitkeep
+
+# Temporary files
+*.log
+*.tmp
+tmp*/
+temp*/
+tmpclaude-*
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Cache
+.cache/
+*.cache

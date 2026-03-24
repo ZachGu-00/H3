@@ -1,0 +1,186 @@
+{
+  "dataset": "data/2014AK_30.csv",
+  "weight_column": "benecount",
+  "output": "reports/h3_variants.json",
+  "trials": 10,
+  "test_size": 0.5,
+  "recall_step": 0.01,
+  "recall_end": 0.1,
+  "base_seed": 42,
+  "max_candidate_pairs": "auto",
+  "auto_candidate_factor": 2.0,
+  "auto_candidate_ceiling": 1500000,
+  "h3_max_workers": 0,
+  "h3_variants": [
+    {
+      "name": "norm_default",
+      "forward_weight": 0.5,
+      "reverse_weight": 0.5,
+      "penalty_gamma": 0.5,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.8,
+      "target_gamma": 0.2,
+      "path_weight_gamma": 0.3
+    },
+    {
+      "name": "norm_none",
+      "forward_weight": 0.5,
+      "reverse_weight": 0.5,
+      "penalty_gamma": 0.5,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.0,
+      "target_gamma": 0.0,
+      "path_weight_gamma": 0.3
+    },
+    {
+      "name": "norm_weak",
+      "forward_weight": 0.5,
+      "reverse_weight": 0.5,
+      "penalty_gamma": 0.5,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.2,
+      "target_gamma": 0.2,
+      "path_weight_gamma": 0.3
+    },
+    {
+      "name": "norm_sqrt",
+      "forward_weight": 0.5,
+      "reverse_weight": 0.5,
+      "penalty_gamma": 0.5,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.5,
+      "target_gamma": 0.5,
+      "path_weight_gamma": 0.3
+    },
+    {
+      "name": "norm_strong",
+      "forward_weight": 0.5,
+      "reverse_weight": 0.5,
+      "penalty_gamma": 0.5,
+      "min_penalty": 1.0,
+      "connector_gamma": 1.0,
+      "target_gamma": 1.0,
+      "path_weight_gamma": 0.3
+    },
+    {
+      "name": "path_unweighted",
+      "forward_weight": 0.5,
+      "reverse_weight": 0.5,
+      "penalty_gamma": 0.5,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.8,
+      "target_gamma": 0.2,
+      "path_weight_gamma": 0.0
+    },
+    {
+      "name": "path_dampened",
+      "forward_weight": 0.5,
+      "reverse_weight": 0.5,
+      "penalty_gamma": 0.5,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.8,
+      "target_gamma": 0.2,
+      "path_weight_gamma": 0.3
+    },
+    {
+      "name": "path_linear",
+      "forward_weight": 0.5,
+      "reverse_weight": 0.5,
+      "penalty_gamma": 0.5,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.8,
+      "target_gamma": 0.2,
+      "path_weight_gamma": 1.0
+    },
+    {
+      "name": "path_amplified",
+      "forward_weight": 0.5,
+      "reverse_weight": 0.5,
+      "penalty_gamma": 0.5,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.8,
+      "target_gamma": 0.2,
+      "path_weight_gamma": 2.0
+    },
+    {
+      "name": "direction_reverse",
+      "forward_weight": 0.0,
+      "reverse_weight": 1.0,
+      "penalty_gamma": 0.5,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.8,
+      "target_gamma": 0.2,
+      "path_weight_gamma": 0.3
+    },
+    {
+      "name": "direction_reverse_biased",
+      "forward_weight": 0.2,
+      "reverse_weight": 0.8,
+      "penalty_gamma": 0.5,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.8,
+      "target_gamma": 0.2,
+      "path_weight_gamma": 0.3
+    },
+    {
+      "name": "direction_balanced",
+      "forward_weight": 0.5,
+      "reverse_weight": 0.5,
+      "penalty_gamma": 0.5,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.8,
+      "target_gamma": 0.2,
+      "path_weight_gamma": 0.3
+    },
+    {
+      "name": "direction_forward_biased",
+      "forward_weight": 0.8,
+      "reverse_weight": 0.2,
+      "penalty_gamma": 0.5,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.8,
+      "target_gamma": 0.2,
+      "path_weight_gamma": 0.3
+    },
+    {
+      "name": "direction_forward",
+      "forward_weight": 1.0,
+      "reverse_weight": 0.0,
+      "penalty_gamma": 0.5,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.8,
+      "target_gamma": 0.2,
+      "path_weight_gamma": 0.3
+    },
+    {
+      "name": "penalty_off",
+      "forward_weight": 0.5,
+      "reverse_weight": 0.5,
+      "penalty_gamma": 0.0,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.8,
+      "target_gamma": 0.2,
+      "path_weight_gamma": 0.3
+    },
+    {
+      "name": "penalty_default",
+      "forward_weight": 0.5,
+      "reverse_weight": 0.5,
+      "penalty_gamma": 0.5,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.8,
+      "target_gamma": 0.2,
+      "path_weight_gamma": 0.3
+    },
+    {
+      "name": "penalty_strong",
+      "forward_weight": 0.5,
+      "reverse_weight": 0.5,
+      "penalty_gamma": 1.0,
+      "min_penalty": 1.0,
+      "connector_gamma": 0.8,
+      "target_gamma": 0.2,
+      "path_weight_gamma": 0.3
+    }
+  ]
+}
